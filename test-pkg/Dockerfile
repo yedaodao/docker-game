@@ -5,4 +5,4 @@ RUN mkdir -p /var/ui/output
 WORKDIR /var/ui/build
 VOLUME ["/var/ui/output"]
 RUN touch test
-ENTRYPOINT ["tar", "-zcvf", "/var/ui/output/test.tar.gz", "./test"]
+CMD ["tar", "-zcvf", "/var/ui/output/test.tar.gz", "./test"]
